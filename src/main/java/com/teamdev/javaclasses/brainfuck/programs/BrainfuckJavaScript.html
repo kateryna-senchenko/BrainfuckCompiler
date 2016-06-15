@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+function execute() {
+
+    var memory = prepareArray();
+    var pointer = 0;
+    var result = "";
+    memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+while (memory[pointer] > 0) {
+pointer++;
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+while (memory[pointer] > 0) {
+pointer++;
+memory[pointer]++;
+memory[pointer]++;
+pointer++;
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+pointer++;
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+pointer++;
+memory[pointer]++;
+pointer--;
+pointer--;
+pointer--;
+pointer--;
+memory[pointer]--;
+        }
+pointer++;
+memory[pointer]++;
+pointer++;
+memory[pointer]++;
+pointer++;
+memory[pointer]--;
+pointer++;
+pointer++;
+memory[pointer]++;
+while (memory[pointer] > 0) {
+pointer--;
+        }
+pointer--;
+memory[pointer]--;
+        }
+pointer++;
+pointer++;
+result += String.fromCharCode(memory[pointer]);
+pointer++;
+memory[pointer]--;
+memory[pointer]--;
+memory[pointer]--;
+result += String.fromCharCode(memory[pointer]);
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+result += String.fromCharCode(memory[pointer]);
+result += String.fromCharCode(memory[pointer]);
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+result += String.fromCharCode(memory[pointer]);
+pointer++;
+pointer++;
+result += String.fromCharCode(memory[pointer]);
+pointer--;
+memory[pointer]--;
+result += String.fromCharCode(memory[pointer]);
+pointer--;
+result += String.fromCharCode(memory[pointer]);
+memory[pointer]++;
+memory[pointer]++;
+memory[pointer]++;
+result += String.fromCharCode(memory[pointer]);
+memory[pointer]--;
+memory[pointer]--;
+memory[pointer]--;
+memory[pointer]--;
+memory[pointer]--;
+memory[pointer]--;
+result += String.fromCharCode(memory[pointer]);
+memory[pointer]--;
+memory[pointer]--;
+memory[pointer]--;
+memory[pointer]--;
+memory[pointer]--;
+memory[pointer]--;
+memory[pointer]--;
+memory[pointer]--;
+result += String.fromCharCode(memory[pointer]);
+pointer++;
+pointer++;
+memory[pointer]++;
+result += String.fromCharCode(memory[pointer]);
+pointer++;
+memory[pointer]++;
+memory[pointer]++;
+result += String.fromCharCode(memory[pointer]);
+
+
+   document.getElementById("demo").innerHTML = result;
+   }
+
+   function prepareArray() {
+        var array = new Array(100);
+        for(var i=0; i<array.length; i++)
+            array[i] = 0;
+        return array;
+   }
+
+</script>
+</head>
+
+<body>
+
+<p id="demo">Check the output</p>
+<button type="button" onclick="execute()">Click</button>
+
+</body>
+
+</html>
