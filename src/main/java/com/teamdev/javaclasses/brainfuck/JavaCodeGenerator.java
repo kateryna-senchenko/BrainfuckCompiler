@@ -82,10 +82,6 @@ public class JavaCodeGenerator implements CommandVisitor{
 
         log.info("Program is parsed");
 
-
-        /*final List<Command> optimizedCommands =
-                new Optimizer().optimize(commands);*/
-
         String javaProgram = new JavaCodeGenerator().generate(commands);
 
 

@@ -76,9 +76,6 @@ public class JavaScriptCodeGenerator implements CommandVisitor{
                                 ">>+.>++.");
         log.info("Program is parsed");
 
-        /*final List<Command> optimizedCommands =
-                new Optimizer().optimize(commands);*/
-
         String jsProgram = new JavaScriptCodeGenerator().generate(commands);
 
 

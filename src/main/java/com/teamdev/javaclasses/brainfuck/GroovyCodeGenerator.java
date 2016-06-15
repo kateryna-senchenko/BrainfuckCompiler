@@ -79,11 +79,7 @@ public class GroovyCodeGenerator implements CommandVisitor{
                                 ">>+.>++.");
         log.info("Program is parsed");
 
-        /*final List<Command> optimizedCommands =
-                new Optimizer().optimize(commands);*/
-
         String groovyProgram = new GroovyCodeGenerator().generate(commands);
-
 
         Map<String, Object> inputData = new HashMap<>();
         inputData.put("data", groovyProgram);
